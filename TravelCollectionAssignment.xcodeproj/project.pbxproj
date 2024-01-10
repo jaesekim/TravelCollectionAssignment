@@ -18,6 +18,7 @@
 		7B6DD6382B4D306200CA20A2 /* TravelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B6DD6362B4D306200CA20A2 /* TravelCollectionViewCell.xib */; };
 		7B6DD63B2B4D3B3C00CA20A2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7B6DD63A2B4D3B3C00CA20A2 /* Kingfisher */; };
 		7B6DD63F2B4D476100CA20A2 /* TravelRecomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6DD63E2B4D476100CA20A2 /* TravelRecomViewController.swift */; };
+		7BECCC752B4E9DC30016B45D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BECCC742B4E9DC30016B45D /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		7B6DD6352B4D306200CA20A2 /* TravelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCollectionViewCell.swift; sourceTree = "<group>"; };
 		7B6DD6362B4D306200CA20A2 /* TravelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelCollectionViewCell.xib; sourceTree = "<group>"; };
 		7B6DD63E2B4D476100CA20A2 /* TravelRecomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelRecomViewController.swift; sourceTree = "<group>"; };
+		7BECCC742B4E9DC30016B45D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		7B6DD61C2B4D2DB000CA20A2 /* TravelCollectionAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				7BECCC732B4E9DAE0016B45D /* Extension */,
 				7B6DD61D2B4D2DB000CA20A2 /* AppDelegate.swift */,
 				7B6DD61F2B4D2DB000CA20A2 /* SceneDelegate.swift */,
 				7B6DD6212B4D2DB000CA20A2 /* ViewController.swift */,
@@ -79,6 +82,14 @@
 				7B6DD63E2B4D476100CA20A2 /* TravelRecomViewController.swift */,
 			);
 			path = TravelCollectionAssignment;
+			sourceTree = "<group>";
+		};
+		7BECCC732B4E9DAE0016B45D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7BECCC742B4E9DC30016B45D /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				7B6DD6322B4D301400CA20A2 /* TravelCollectionViewController.swift in Sources */,
 				7B6DD63F2B4D476100CA20A2 /* TravelRecomViewController.swift in Sources */,
 				7B6DD6222B4D2DB000CA20A2 /* ViewController.swift in Sources */,
+				7BECCC752B4E9DC30016B45D /* UIViewController+Extension.swift in Sources */,
 				7B6DD6372B4D306200CA20A2 /* TravelCollectionViewCell.swift in Sources */,
 				7B6DD61E2B4D2DB000CA20A2 /* AppDelegate.swift in Sources */,
 				7B6DD6202B4D2DB000CA20A2 /* SceneDelegate.swift in Sources */,

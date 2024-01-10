@@ -50,24 +50,15 @@ class TravelRecomViewController: UIViewController, UICollectionViewDelegate, UIC
         // segmentedController 설정
         setSegmented()
         
-        // XIB 연결
-        let xib = UINib(nibName: "TravelCollectionViewCell", bundle: nil)
-        travelCollection.register(xib, forCellWithReuseIdentifier: "TravelCollectionViewCell")
+        // extension XIB 연결
+        connectXibToCell(nibName: "TravelCollectionViewCell", targetCollection: travelCollection)
         
-        // layout 객체 생성 및 관련 변수 선언
-        let layout = UICollectionViewFlowLayout()
-        let spacing: CGFloat = 16  // inset, cell 간 간격
-        let cellWidth = (UIScreen.main.bounds.width - spacing * 3) / 2  // 컬렉션 셀 하나의 너비
+        // layout 관련 변수 선언
+        let spacing: CGFloat = 16
+        let cellWidth = (UIScreen.main.bounds.width - spacing * 3) / 2
         
-        // layout 세부 설정
-        layout.itemSize = CGSize(width: cellWidth, height: cellWidth * 1.4)
-        layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
-        layout.minimumLineSpacing = spacing
-        layout.minimumLineSpacing = spacing
-        
-        // layout 적용
-        travelCollection.collectionViewLayout = layout
-        
+        // extension 활용한 layout 설정
+        setCollectionViewLayout(spacing: spacing, cellWidth: cellWidth, cellHeight: cellWidth, targetCollection: travelCollection)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
